@@ -11,10 +11,7 @@
 		5BA437BA137D271E00BABA88 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B9137D271E00BABA88 /* MacRuby.framework */; };
 		5BA437C1137D271E00BABA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437BF137D271E00BABA88 /* InfoPlist.strings */; };
 		5BA437C4137D271E00BABA88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437C3137D271E00BABA88 /* main.m */; };
-		5BA437C8137D271F00BABA88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437C6137D271F00BABA88 /* MainMenu.xib */; };
 		5BA437CB137D271F00BABA88 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437CA137D271F00BABA88 /* rb_main.rb */; };
-		5BA437CD137D271F00BABA88 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437CC137D271F00BABA88 /* AppDelegate.rb */; };
-		5BA437D0137D271F00BABA88 /* Homebrew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437CE137D271F00BABA88 /* Homebrew.xcdatamodeld */; };
 		5BA437D8137D271F00BABA88 /* HomebrewImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437D5137D271F00BABA88 /* HomebrewImporter.mdimporter */; };
 		5BA437DA137D271F00BABA88 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437D9137D271F00BABA88 /* CoreServices.framework */; };
 		5BA437DC137D271F00BABA88 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437DB137D271F00BABA88 /* CoreFoundation.framework */; };
@@ -24,6 +21,9 @@
 		5BA437E9137D271F00BABA88 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437E8137D271F00BABA88 /* main.c */; };
 		5BA437EB137D271F00BABA88 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437EA137D271F00BABA88 /* GetMetadataForFile.m */; };
 		5BA437EE137D271F00BABA88 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437ED137D271F00BABA88 /* MySpotlightImporter.m */; };
+		5BA437FC137D275200BABA88 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437FB137D275200BABA88 /* AppDelegate.rb */; };
+		5BA437FE137D276F00BABA88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437FD137D276F00BABA88 /* MainMenu.xib */; };
+		5BA43804137D280900BABA88 /* Homebrew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA43802137D280900BABA88 /* Homebrew.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,27 +40,27 @@
 		5BA437B3137D271E00BABA88 /* Homebrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homebrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA437B7137D271E00BABA88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5BA437B9137D271E00BABA88 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
-		5BA437BE137D271E00BABA88 /* Homebrew-Info.plist */ = {isa = PBXFileReference; path = "Homebrew-Info.plist"; sourceTree = "<group>"; };
+		5BA437BE137D271E00BABA88 /* Homebrew-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Homebrew-Info.plist"; sourceTree = "<group>"; };
 		5BA437C0137D271E00BABA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5BA437C2137D271E00BABA88 /* Homebrew-Prefix.pch */ = {isa = PBXFileReference; path = "Homebrew-Prefix.pch"; sourceTree = "<group>"; };
+		5BA437C2137D271E00BABA88 /* Homebrew-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Homebrew-Prefix.pch"; sourceTree = "<group>"; };
 		5BA437C3137D271E00BABA88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5BA437C7137D271F00BABA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		5BA437CA137D271F00BABA88 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
-		5BA437CC137D271F00BABA88 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
-		5BA437CF137D271F00BABA88 /* Homebrew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homebrew.xcdatamodel; sourceTree = "<group>"; };
 		5BA437D5137D271F00BABA88 /* HomebrewImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomebrewImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA437D9137D271F00BABA88 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5BA437DB137D271F00BABA88 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		5BA437DD137D271F00BABA88 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		5BA437DF137D271F00BABA88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5BA437E3137D271F00BABA88 /* HomebrewImporter-Info.plist */ = {isa = PBXFileReference; path = "HomebrewImporter-Info.plist"; sourceTree = "<group>"; };
+		5BA437E3137D271F00BABA88 /* HomebrewImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomebrewImporter-Info.plist"; sourceTree = "<group>"; };
 		5BA437E5137D271F00BABA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5BA437E7137D271F00BABA88 /* HomebrewImporter-Prefix.pch */ = {isa = PBXFileReference; path = "HomebrewImporter-Prefix.pch"; sourceTree = "<group>"; };
+		5BA437E7137D271F00BABA88 /* HomebrewImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomebrewImporter-Prefix.pch"; sourceTree = "<group>"; };
 		5BA437E8137D271F00BABA88 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5BA437EA137D271F00BABA88 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
-		5BA437EC137D271F00BABA88 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		5BA437EC137D271F00BABA88 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		5BA437ED137D271F00BABA88 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
-		5BA437EF137D271F00BABA88 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		5BA437EF137D271F00BABA88 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		5BA437FB137D275200BABA88 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		5BA437FD137D276F00BABA88 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		5BA43803137D280900BABA88 /* Homebrew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homebrew.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 		5BA437BC137D271E00BABA88 /* Homebrew */ = {
 			isa = PBXGroup;
 			children = (
-				5BA437CC137D271F00BABA88 /* AppDelegate.rb */,
-				5BA437CE137D271F00BABA88 /* Homebrew.xcdatamodeld */,
+				5BA437FB137D275200BABA88 /* AppDelegate.rb */,
+				5BA43802137D280900BABA88 /* Homebrew.xcdatamodeld */,
 				5BA437C5137D271F00BABA88 /* Resources */,
 				5BA437C9137D271F00BABA88 /* Other Sources */,
 				5BA437BD137D271E00BABA88 /* Supporting Files */,
@@ -145,7 +145,7 @@
 		5BA437C5137D271F00BABA88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5BA437C6137D271F00BABA88 /* MainMenu.xib */,
+				5BA437FD137D276F00BABA88 /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -268,10 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA437C1137D271E00BABA88 /* InfoPlist.strings in Resources */,
-				5BA437C8137D271F00BABA88 /* MainMenu.xib in Resources */,
 				5BA437CB137D271F00BABA88 /* rb_main.rb in Resources */,
-				5BA437CD137D271F00BABA88 /* AppDelegate.rb in Resources */,
 				5BA437D8137D271F00BABA88 /* HomebrewImporter.mdimporter in Resources */,
+				5BA437FC137D275200BABA88 /* AppDelegate.rb in Resources */,
+				5BA437FE137D276F00BABA88 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA437C4137D271E00BABA88 /* main.m in Sources */,
-				5BA437D0137D271F00BABA88 /* Homebrew.xcdatamodeld in Sources */,
+				5BA43804137D280900BABA88 /* Homebrew.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,14 +322,6 @@
 				5BA437C0137D271E00BABA88 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5BA437C6137D271F00BABA88 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5BA437C7137D271F00BABA88 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		5BA437E4137D271F00BABA88 /* InfoPlist.strings */ = {
@@ -496,12 +488,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5BA437CE137D271F00BABA88 /* Homebrew.xcdatamodeld */ = {
+		5BA43802137D280900BABA88 /* Homebrew.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5BA437CF137D271F00BABA88 /* Homebrew.xcdatamodel */,
+				5BA43803137D280900BABA88 /* Homebrew.xcdatamodel */,
 			);
-			currentVersion = 5BA437CF137D271F00BABA88 /* Homebrew.xcdatamodel */;
+			currentVersion = 5BA43803137D280900BABA88 /* Homebrew.xcdatamodel */;
 			path = Homebrew.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

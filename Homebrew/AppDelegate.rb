@@ -2,14 +2,68 @@
 #  AppDelegate.rb
 #  Homebrew
 #
-#  Created by travisjeffery on 11-05-13.
+#  Created by Travis Jeffery on 11-05-11.
 #  Copyright 2011 Travis Jeffery. All rights reserved.
 #
 
+# should probably have a preference to save if in custom location
+HOMEBREW_PATH = "/usr/local/bin/brew"
+
 class AppDelegate
     attr_accessor :window
+    attr_accessor :formulas
+    attr_accessor :totalFormulasFoundLabel
+    
     def applicationDidFinishLaunching(a_notification)
         # Insert code here to initialize your application
+        @myGroup = Dispatch::Group.new
+        @myQueue = Dispatch::Queue.new('com.travisjeffery.homebrew')
+        
+        emptyFormulas && @managedObjectContext.save(nil)
+        
+        storeFormulasWithFormulas(`#{HOMEBREW_PATH} search`.split)
+
+        @managedObjectContext.save(nil)
+        
+        @totalFormulasFoundLabel.stringValue = "#{totalFormulasFound} in total found"
+    end
+    
+    def close(sender)
+        window.close
+    end
+    
+    def emptyFormulas
+        allFormulas = NSFetchRequest.alloc.init
+        allFormulas.setEntity(NSEntityDescription.entityForName("Formula", inManagedObjectContext:@managedObjectContext))
+        formulas = @managedObjectContext.executeFetchRequest(allFormulas, error:nil)
+        formulas.each do |formula|
+            @managedObjectContext.deleteObject(formula)
+        end 
+    end
+    
+    def totalFormulasFound
+        allFormulas = NSFetchRequest.alloc.init
+        allFormulas.setEntity(NSEntityDescription.entityForName("Formula", inManagedObjectContext:@managedObjectContext))
+        @managedObjectContext.executeFetchRequest(allFormulas, error:nil).length
+    end
+    
+    def storeFormulasWithFormulas(formulas)
+        formulas[0..5].each do |formula|
+            @myQueue.async(@myGroup) do
+                info = `#{HOMEBREW_PATH} info #{formula}`.split
+                # todo: add in comments section that this formula is outdated
+                newFormula = NSEntityDescription.insertNewObjectForEntityForName("Formula", inManagedObjectContext: @managedObjectContext)
+                newFormula.name = info[0]
+                newFormula.version = info[1]
+                newFormula.homepage = info[2]
+                # todo: check if formula is old
+                newFormula.isInstalled = "Ok" if `#{HOMEBREW_PATH} info #{formula}`.scan(/Not installed/).empty?
+            end
+        end
+        @myGroup.wait
+    end
+    
+    def awakeFromNib
     end
 
     # Persistence accessors
