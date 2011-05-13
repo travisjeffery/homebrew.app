@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5BA437B8137D271E00BABA88 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B7137D271E00BABA88 /* Cocoa.framework */; };
+		5BA437BA137D271E00BABA88 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B9137D271E00BABA88 /* MacRuby.framework */; };
+		5BA437C1137D271E00BABA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437BF137D271E00BABA88 /* InfoPlist.strings */; };
+		5BA437C4137D271E00BABA88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437C3137D271E00BABA88 /* main.m */; };
+		5BA437C8137D271F00BABA88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437C6137D271F00BABA88 /* MainMenu.xib */; };
+		5BA437CB137D271F00BABA88 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437CA137D271F00BABA88 /* rb_main.rb */; };
+		5BA437CD137D271F00BABA88 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437CC137D271F00BABA88 /* AppDelegate.rb */; };
+		5BA437D0137D271F00BABA88 /* Homebrew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437CE137D271F00BABA88 /* Homebrew.xcdatamodeld */; };
+		5BA437D8137D271F00BABA88 /* HomebrewImporter.mdimporter in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437D5137D271F00BABA88 /* HomebrewImporter.mdimporter */; };
+		5BA437DA137D271F00BABA88 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437D9137D271F00BABA88 /* CoreServices.framework */; };
+		5BA437DC137D271F00BABA88 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437DB137D271F00BABA88 /* CoreFoundation.framework */; };
+		5BA437DE137D271F00BABA88 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437DD137D271F00BABA88 /* CoreData.framework */; };
+		5BA437E0137D271F00BABA88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437DF137D271F00BABA88 /* Foundation.framework */; };
+		5BA437E6137D271F00BABA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437E4137D271F00BABA88 /* InfoPlist.strings */; };
+		5BA437E9137D271F00BABA88 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437E8137D271F00BABA88 /* main.c */; };
+		5BA437EB137D271F00BABA88 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437EA137D271F00BABA88 /* GetMetadataForFile.m */; };
+		5BA437EE137D271F00BABA88 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA437ED137D271F00BABA88 /* MySpotlightImporter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BA437D6137D271F00BABA88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BA437AA137D271E00BABA88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA437D4137D271F00BABA88;
+			remoteInfo = HomebrewImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5BA437B3137D271E00BABA88 /* Homebrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homebrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BA437B7137D271E00BABA88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5BA437B9137D271E00BABA88 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
+		5BA437BE137D271E00BABA88 /* Homebrew-Info.plist */ = {isa = PBXFileReference; path = "Homebrew-Info.plist"; sourceTree = "<group>"; };
+		5BA437C0137D271E00BABA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BA437C2137D271E00BABA88 /* Homebrew-Prefix.pch */ = {isa = PBXFileReference; path = "Homebrew-Prefix.pch"; sourceTree = "<group>"; };
+		5BA437C3137D271E00BABA88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BA437C7137D271F00BABA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BA437CA137D271F00BABA88 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		5BA437CC137D271F00BABA88 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		5BA437CF137D271F00BABA88 /* Homebrew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homebrew.xcdatamodel; sourceTree = "<group>"; };
+		5BA437D5137D271F00BABA88 /* HomebrewImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomebrewImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BA437D9137D271F00BABA88 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5BA437DB137D271F00BABA88 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5BA437DD137D271F00BABA88 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BA437DF137D271F00BABA88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BA437E3137D271F00BABA88 /* HomebrewImporter-Info.plist */ = {isa = PBXFileReference; path = "HomebrewImporter-Info.plist"; sourceTree = "<group>"; };
+		5BA437E5137D271F00BABA88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BA437E7137D271F00BABA88 /* HomebrewImporter-Prefix.pch */ = {isa = PBXFileReference; path = "HomebrewImporter-Prefix.pch"; sourceTree = "<group>"; };
+		5BA437E8137D271F00BABA88 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5BA437EA137D271F00BABA88 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		5BA437EC137D271F00BABA88 /* MySpotlightImporter.h */ = {isa = PBXFileReference; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		5BA437ED137D271F00BABA88 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		5BA437EF137D271F00BABA88 /* Importer Read Me.txt */ = {isa = PBXFileReference; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BA437B0137D271E00BABA88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA437B8137D271E00BABA88 /* Cocoa.framework in Frameworks */,
+				5BA437BA137D271E00BABA88 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA437D2137D271F00BABA88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA437DA137D271F00BABA88 /* CoreServices.framework in Frameworks */,
+				5BA437DC137D271F00BABA88 /* CoreFoundation.framework in Frameworks */,
+				5BA437DE137D271F00BABA88 /* CoreData.framework in Frameworks */,
+				5BA437E0137D271F00BABA88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BA437A8137D271E00BABA88 = {
+			isa = PBXGroup;
+			children = (
+				5BA437BC137D271E00BABA88 /* Homebrew */,
+				5BA437E1137D271F00BABA88 /* HomebrewImporter */,
+				5BA437B6137D271E00BABA88 /* Frameworks */,
+				5BA437B4137D271E00BABA88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BA437B4137D271E00BABA88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437B3137D271E00BABA88 /* Homebrew.app */,
+				5BA437D5137D271F00BABA88 /* HomebrewImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BA437B6137D271E00BABA88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437B7137D271E00BABA88 /* Cocoa.framework */,
+				5BA437B9137D271E00BABA88 /* MacRuby.framework */,
+				5BA437D9137D271F00BABA88 /* CoreServices.framework */,
+				5BA437DB137D271F00BABA88 /* CoreFoundation.framework */,
+				5BA437DD137D271F00BABA88 /* CoreData.framework */,
+				5BA437DF137D271F00BABA88 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BA437BC137D271E00BABA88 /* Homebrew */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437CC137D271F00BABA88 /* AppDelegate.rb */,
+				5BA437CE137D271F00BABA88 /* Homebrew.xcdatamodeld */,
+				5BA437C5137D271F00BABA88 /* Resources */,
+				5BA437C9137D271F00BABA88 /* Other Sources */,
+				5BA437BD137D271E00BABA88 /* Supporting Files */,
+			);
+			path = Homebrew;
+			sourceTree = "<group>";
+		};
+		5BA437BD137D271E00BABA88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437BE137D271E00BABA88 /* Homebrew-Info.plist */,
+				5BA437BF137D271E00BABA88 /* InfoPlist.strings */,
+				5BA437C2137D271E00BABA88 /* Homebrew-Prefix.pch */,
+				5BA437C3137D271E00BABA88 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BA437C5137D271F00BABA88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437C6137D271F00BABA88 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5BA437C9137D271F00BABA88 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437CA137D271F00BABA88 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		5BA437E1137D271F00BABA88 /* HomebrewImporter */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437EA137D271F00BABA88 /* GetMetadataForFile.m */,
+				5BA437EC137D271F00BABA88 /* MySpotlightImporter.h */,
+				5BA437ED137D271F00BABA88 /* MySpotlightImporter.m */,
+				5BA437EF137D271F00BABA88 /* Importer Read Me.txt */,
+				5BA437E2137D271F00BABA88 /* Supporting Files */,
+			);
+			path = HomebrewImporter;
+			sourceTree = "<group>";
+		};
+		5BA437E2137D271F00BABA88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BA437E3137D271F00BABA88 /* HomebrewImporter-Info.plist */,
+				5BA437E4137D271F00BABA88 /* InfoPlist.strings */,
+				5BA437E7137D271F00BABA88 /* HomebrewImporter-Prefix.pch */,
+				5BA437E8137D271F00BABA88 /* main.c */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		5BA437BB137D271E00BABA88 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 5BA437F8137D271F00BABA88 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		5BA437B2137D271E00BABA88 /* Homebrew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BA437F5137D271F00BABA88 /* Build configuration list for PBXNativeTarget "Homebrew" */;
+			buildPhases = (
+				5BA437AF137D271E00BABA88 /* Sources */,
+				5BA437B0137D271E00BABA88 /* Frameworks */,
+				5BA437B1137D271E00BABA88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BA437D7137D271F00BABA88 /* PBXTargetDependency */,
+			);
+			name = Homebrew;
+			productName = Homebrew;
+			productReference = 5BA437B3137D271E00BABA88 /* Homebrew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BA437D4137D271F00BABA88 /* HomebrewImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BA437F2137D271F00BABA88 /* Build configuration list for PBXNativeTarget "HomebrewImporter" */;
+			buildPhases = (
+				5BA437D1137D271F00BABA88 /* Sources */,
+				5BA437D2137D271F00BABA88 /* Frameworks */,
+				5BA437D3137D271F00BABA88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HomebrewImporter;
+			productName = HomebrewImporter;
+			productReference = 5BA437D5137D271F00BABA88 /* HomebrewImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BA437AA137D271E00BABA88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Travis Jeffery";
+			};
+			buildConfigurationList = 5BA437AD137D271E00BABA88 /* Build configuration list for PBXProject "Homebrew" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BA437A8137D271E00BABA88;
+			productRefGroup = 5BA437B4137D271E00BABA88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BA437B2137D271E00BABA88 /* Homebrew */,
+				5BA437BB137D271E00BABA88 /* Deployment */,
+				5BA437D4137D271F00BABA88 /* HomebrewImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BA437B1137D271E00BABA88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA437C1137D271E00BABA88 /* InfoPlist.strings in Resources */,
+				5BA437C8137D271F00BABA88 /* MainMenu.xib in Resources */,
+				5BA437CB137D271F00BABA88 /* rb_main.rb in Resources */,
+				5BA437CD137D271F00BABA88 /* AppDelegate.rb in Resources */,
+				5BA437D8137D271F00BABA88 /* HomebrewImporter.mdimporter in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA437D3137D271F00BABA88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA437E6137D271F00BABA88 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BA437AF137D271E00BABA88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA437C4137D271E00BABA88 /* main.m in Sources */,
+				5BA437D0137D271F00BABA88 /* Homebrew.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA437D1137D271F00BABA88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA437E9137D271F00BABA88 /* main.c in Sources */,
+				5BA437EB137D271F00BABA88 /* GetMetadataForFile.m in Sources */,
+				5BA437EE137D271F00BABA88 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BA437D7137D271F00BABA88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BA437D4137D271F00BABA88 /* HomebrewImporter */;
+			targetProxy = 5BA437D6137D271F00BABA88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BA437BF137D271E00BABA88 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BA437C0137D271E00BABA88 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BA437C6137D271F00BABA88 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BA437C7137D271F00BABA88 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5BA437E4137D271F00BABA88 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BA437E5137D271F00BABA88 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BA437F0137D271F00BABA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BA437F1137D271F00BABA88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BA437F3137D271F00BABA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomebrewImporter/HomebrewImporter-Prefix.pch";
+				INFOPLIST_FILE = "HomebrewImporter/HomebrewImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		5BA437F4137D271F00BABA88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HomebrewImporter/HomebrewImporter-Prefix.pch";
+				INFOPLIST_FILE = "HomebrewImporter/HomebrewImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		5BA437F6137D271F00BABA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homebrew/Homebrew-Prefix.pch";
+				INFOPLIST_FILE = "Homebrew/Homebrew-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BA437F7137D271F00BABA88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Homebrew/Homebrew-Prefix.pch";
+				INFOPLIST_FILE = "Homebrew/Homebrew-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5BA437F9137D271F00BABA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		5BA437FA137D271F00BABA88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BA437AD137D271E00BABA88 /* Build configuration list for PBXProject "Homebrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA437F0137D271F00BABA88 /* Debug */,
+				5BA437F1137D271F00BABA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BA437F2137D271F00BABA88 /* Build configuration list for PBXNativeTarget "HomebrewImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA437F3137D271F00BABA88 /* Debug */,
+				5BA437F4137D271F00BABA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5BA437F5137D271F00BABA88 /* Build configuration list for PBXNativeTarget "Homebrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA437F6137D271F00BABA88 /* Debug */,
+				5BA437F7137D271F00BABA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5BA437F8137D271F00BABA88 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA437F9137D271F00BABA88 /* Debug */,
+				5BA437FA137D271F00BABA88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5BA437CE137D271F00BABA88 /* Homebrew.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5BA437CF137D271F00BABA88 /* Homebrew.xcdatamodel */,
+			);
+			currentVersion = 5BA437CF137D271F00BABA88 /* Homebrew.xcdatamodel */;
+			path = Homebrew.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5BA437AA137D271E00BABA88 /* Project object */;
+}
