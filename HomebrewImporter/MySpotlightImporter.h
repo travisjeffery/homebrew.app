@@ -2,7 +2,7 @@
 //  MySpotlightImporter.h
 //  HomebrewImporter
 //
-//  Created by travisjeffery on 11-05-13.
+//  Created by Travis Jeffery on 11-05-13.
 //  Copyright 2011 Travis Jeffery. All rights reserved.
 //
 

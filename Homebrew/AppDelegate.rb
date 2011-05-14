@@ -5,15 +5,10 @@
 #  Created by Travis Jeffery on 11-05-11.
 #  Copyright 2011 Travis Jeffery. All rights reserved.
 #
-#  Notes: Yes, this is Ruby. But most of the methods, classes, and so forth
-#  come from Apple's Frameworks written in Objective-C and it's style, and in
-#  paticular, in camelCase. Thus, I've tried to maintain that style as much as
-#  possible and you should to.
-
-# should probably have a preference to save if in custom location
 
 framework 'Foundation'
 
+# should probably have a preference to save if in custom location
 HOMEBREW_PATH = ENV['HOMEBREW_PATH'] || "/usr/local/bin/brew"
 
 class AppDelegate
