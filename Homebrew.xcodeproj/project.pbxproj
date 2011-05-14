@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9AFC41137E233E00C444B9 /* NSString+Hyperlink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9AFC40137E233E00C444B9 /* NSString+Hyperlink.m */; };
 		5BA437B8137D271E00BABA88 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B7137D271E00BABA88 /* Cocoa.framework */; };
 		5BA437BA137D271E00BABA88 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B9137D271E00BABA88 /* MacRuby.framework */; };
 		5BA437C1137D271E00BABA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437BF137D271E00BABA88 /* InfoPlist.strings */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B9AFC3F137E233E00C444B9 /* NSString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hyperlink.h"; sourceTree = "<group>"; };
+		5B9AFC40137E233E00C444B9 /* NSString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hyperlink.m"; sourceTree = "<group>"; };
 		5BA437B3137D271E00BABA88 /* Homebrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homebrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA437B7137D271E00BABA88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5BA437B9137D271E00BABA88 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 				5BA437C5137D271F00BABA88 /* Resources */,
 				5BA437C9137D271F00BABA88 /* Other Sources */,
 				5BA437BD137D271E00BABA88 /* Supporting Files */,
+				5B9AFC3F137E233E00C444B9 /* NSString+Hyperlink.h */,
+				5B9AFC40137E233E00C444B9 /* NSString+Hyperlink.m */,
 			);
 			path = Homebrew;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				5BA43807137D2A7E00BABA88 /* TSPProgressIndicator.m in Sources */,
 				5BA4380E137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m in Sources */,
 				5BA4380F137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */,
+				5B9AFC41137E233E00C444B9 /* NSString+Hyperlink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +509,7 @@
 				5BA437F4137D271F00BABA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BA437F5137D271F00BABA88 /* Build configuration list for PBXNativeTarget "Homebrew" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +518,7 @@
 				5BA437F7137D271F00BABA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BA437F8137D271F00BABA88 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +527,7 @@
 				5BA437FA137D271F00BABA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

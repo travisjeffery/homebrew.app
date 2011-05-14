@@ -5,9 +5,16 @@
 #  Created by Travis Jeffery on 11-05-11.
 #  Copyright 2011 Travis Jeffery. All rights reserved.
 #
+#  Notes: Yes, this is Ruby. But most of the methods, classes, and so forth
+#  come from Apple's Frameworks written in Objective-C and it's style, and in
+#  paticular, in camelCase. Thus, I've tried to maintain that style as much as
+#  possible and you should to.
 
 # should probably have a preference to save if in custom location
-HOMEBREW_PATH = "/usr/local/bin/brew"
+
+framework 'Foundation'
+
+HOMEBREW_PATH = ENV['HOMEBREW_PATH'] || "/usr/local/bin/brew"
 
 class AppDelegate
     attr_accessor :window
@@ -38,9 +45,10 @@ class AppDelegate
         case sender.cell.tagForSegment(sender.selectedSegment)
         when 1
             puts "selectedSegment was 1"
-            installedFormulas
+            installedFormulas(nil)
         when 2
-            # oudated formulas
+            puts "selectedSegment was 2"
+            outdatedFormulas(nil)
         else
             # all
             results = formulasFoundWithRequest(nil, withPredicate:nil)
@@ -48,9 +56,14 @@ class AppDelegate
         end
     end
     
-    def installedFormulas
+    def installedFormulas(sender)
         results = formulasFoundWithRequest(nil, withPredicate:NSPredicate.predicateWithFormat("isInstalled == Ok"))
         @totalFormulasFoundLabel.stringValue = "#{results.length} in total found"
+    end
+
+    def outdatedFormulas(sender)
+        emptyFormulas
+        storeFormulasWithFormulas(`#{HOMEBREW_PATH} outdated`.split)
     end
     
     def emptyFormulas
@@ -66,6 +79,7 @@ class AppDelegate
         end
         request.predicate = predicate if predicate
         error = Pointer.new(:id)
+
         @managedObjectContext.executeFetchRequest(request, error:error)
     end
     
@@ -74,16 +88,19 @@ class AppDelegate
     end
     
     def storeFormulasWithFormulas(formulas)
-        # until i have the caching working correctly, just getting first 5 or
-        # so for speed purposes during development
-        formulas[0..5].each do |formula|
+        # until i have the caching working correctly, getting first small
+        # amounts of formulas for speed purposes during development
+        formulas[0..25].each do |formula|
             @myQueue.async(@myGroup) do
                 info = `#{HOMEBREW_PATH} info #{formula}`.split
                 # todo: add in comments section that this formula is outdated
                 newFormula = NSEntityDescription.insertNewObjectForEntityForName("Formula", inManagedObjectContext: @managedObjectContext)
-                newFormula.name = info[0]
-                newFormula.version = info[1]
-                newFormula.homepage = info[2]
+
+                # xxx: hackish
+                newFormula.name     = info[0]
+                newFormula.version  = info[1]
+                #newFormula.homepage = NSString.hyperlinkFromString(info[2], info[2])
+                newFormula.homepage  = info[2]
                 # todo: check if formula is old
                 newFormula.isInstalled = "Ok" if `#{HOMEBREW_PATH} info #{formula}`.scan(/Not installed/).empty?
             end

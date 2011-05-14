@@ -1860,6 +1860,7 @@
 									</object>
 									<object class="NSSegmentItem">
 										<string key="NSSegmentItemLabel">Outdated</string>
+										<int key="NSSegmentItemTag">2</int>
 										<int key="NSSegmentItemImageScaling">0</int>
 									</object>
 								</object>
@@ -4527,7 +4528,7 @@
 					<integer value="1"/>
 					<integer value="1"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1"/>
+					<integer value="2"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
@@ -4583,11 +4584,15 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>applicationShouldTerminate:</string>
 							<string>close:</string>
+							<string>installedFormulas:</string>
+							<string>outdatedFormulas:</string>
 							<string>saveAction:</string>
 							<string>segmentedControlAction:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -4600,6 +4605,8 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>applicationShouldTerminate:</string>
 							<string>close:</string>
+							<string>installedFormulas:</string>
+							<string>outdatedFormulas:</string>
 							<string>saveAction:</string>
 							<string>segmentedControlAction:</string>
 						</object>
@@ -4611,6 +4618,14 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">close:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">installedFormulas:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">outdatedFormulas:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
