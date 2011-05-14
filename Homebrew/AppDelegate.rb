@@ -65,7 +65,7 @@ class AppDelegate
             request.entity = NSEntityDescription.entityForName("Formula", inManagedObjectContext:@managedObjectContext)
         end
         request.predicate = predicate if predicate
-        error = Pointer.new_with_type('@')
+        error = Pointer.new(:id)
         @managedObjectContext.executeFetchRequest(request, error:error)
     end
     
@@ -74,6 +74,8 @@ class AppDelegate
     end
     
     def storeFormulasWithFormulas(formulas)
+        # until i have the caching working correctly, just getting first 5 or
+        # so for speed purposes during development
         formulas[0..5].each do |formula|
             @myQueue.async(@myGroup) do
                 info = `#{HOMEBREW_PATH} info #{formula}`.split
@@ -132,7 +134,7 @@ class AppDelegate
 
         file_manager = NSFileManager.defaultManager
         directory = self.applicationFilesDirectory
-        error = Pointer.new_with_type('@')
+        error = Pointer.new(:id)
 
         properties = directory.resourceValuesForKeys([NSURLIsDirectoryKey], error:error)
 
@@ -200,7 +202,7 @@ class AppDelegate
     # Performs the save action for the application, which is to send the save: message to the application's managed object context. Any encountered errors are presented to the user.
     #
     def saveAction(sender)
-        error = Pointer.new_with_type('@')
+        error = Pointer.new(:id)
 
         unless self.managedObjectContext.commitEditing
           puts "#{self.class} unable to commit editing before saving"
