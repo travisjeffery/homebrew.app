@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B9AFC41137E233E00C444B9 /* NSString+Hyperlink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9AFC40137E233E00C444B9 /* NSString+Hyperlink.m */; };
+		5B9AFC6D137E688700C444B9 /* NSBezierPath+MCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9AFC68137E688700C444B9 /* NSBezierPath+MCAdditions.m */; };
+		5B9AFC6E137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9AFC6A137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.m */; };
+		5B9AFC6F137E688700C444B9 /* TSPProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9AFC6C137E688700C444B9 /* TSPProgressIndicator.m */; };
+		5B9AFC74137E68AE00C444B9 /* NSString+Hyperlink.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9AFC73137E68AE00C444B9 /* NSString+Hyperlink.m */; };
 		5BA437B8137D271E00BABA88 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B7137D271E00BABA88 /* Cocoa.framework */; };
 		5BA437BA137D271E00BABA88 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA437B9137D271E00BABA88 /* MacRuby.framework */; };
 		5BA437C1137D271E00BABA88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437BF137D271E00BABA88 /* InfoPlist.strings */; };
@@ -25,9 +28,6 @@
 		5BA437FC137D275200BABA88 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437FB137D275200BABA88 /* AppDelegate.rb */; };
 		5BA437FE137D276F00BABA88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437FD137D276F00BABA88 /* MainMenu.xib */; };
 		5BA43804137D280900BABA88 /* Homebrew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA43802137D280900BABA88 /* Homebrew.xcdatamodeld */; };
-		5BA43807137D2A7E00BABA88 /* TSPProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA43805137D2A7E00BABA88 /* TSPProgressIndicator.m */; };
-		5BA4380E137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4380B137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m */; };
-		5BA4380F137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4380D137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5B9AFC3F137E233E00C444B9 /* NSString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hyperlink.h"; sourceTree = "<group>"; };
-		5B9AFC40137E233E00C444B9 /* NSString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hyperlink.m"; sourceTree = "<group>"; };
+		5B9AFC67137E688700C444B9 /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
+		5B9AFC68137E688700C444B9 /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
+		5B9AFC69137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+PXRoundedRectangleAdditions.h"; sourceTree = "<group>"; };
+		5B9AFC6A137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+PXRoundedRectangleAdditions.m"; sourceTree = "<group>"; };
+		5B9AFC6B137E688700C444B9 /* TSPProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPProgressIndicator.h; sourceTree = "<group>"; };
+		5B9AFC6C137E688700C444B9 /* TSPProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPProgressIndicator.m; sourceTree = "<group>"; };
+		5B9AFC72137E68AE00C444B9 /* NSString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hyperlink.h"; sourceTree = "<group>"; };
+		5B9AFC73137E68AE00C444B9 /* NSString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hyperlink.m"; sourceTree = "<group>"; };
 		5BA437B3137D271E00BABA88 /* Homebrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homebrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BA437B7137D271E00BABA88 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		5BA437B9137D271E00BABA88 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -67,12 +73,6 @@
 		5BA437FB137D275200BABA88 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		5BA437FD137D276F00BABA88 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		5BA43803137D280900BABA88 /* Homebrew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homebrew.xcdatamodel; sourceTree = "<group>"; };
-		5BA43805137D2A7E00BABA88 /* TSPProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPProgressIndicator.m; sourceTree = "<group>"; };
-		5BA43806137D2A7E00BABA88 /* TSPProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPProgressIndicator.h; sourceTree = "<group>"; };
-		5BA4380A137D2A9A00BABA88 /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
-		5BA4380B137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
-		5BA4380C137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+PXRoundedRectangleAdditions.h"; sourceTree = "<group>"; };
-		5BA4380D137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+PXRoundedRectangleAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +99,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B9AFC65137E688700C444B9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5B9AFC66137E688700C444B9 /* Additions */,
+				5B9AFC6B137E688700C444B9 /* TSPProgressIndicator.h */,
+				5B9AFC6C137E688700C444B9 /* TSPProgressIndicator.m */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		5B9AFC66137E688700C444B9 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5B9AFC67137E688700C444B9 /* NSBezierPath+MCAdditions.h */,
+				5B9AFC68137E688700C444B9 /* NSBezierPath+MCAdditions.m */,
+				5B9AFC69137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.h */,
+				5B9AFC6A137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		5B9AFC71137E68AE00C444B9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5B9AFC72137E68AE00C444B9 /* NSString+Hyperlink.h */,
+				5B9AFC73137E68AE00C444B9 /* NSString+Hyperlink.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		5BA437A8137D271E00BABA88 = {
 			isa = PBXGroup;
 			children = (
 				5BA437BC137D271E00BABA88 /* Homebrew */,
-				5BA43808137D2A8400BABA88 /* Vendor */,
 				5BA437E1137D271F00BABA88 /* HomebrewImporter */,
 				5BA437B6137D271E00BABA88 /* Frameworks */,
 				5BA437B4137D271E00BABA88 /* Products */,
@@ -137,11 +166,11 @@
 			children = (
 				5BA437FB137D275200BABA88 /* AppDelegate.rb */,
 				5BA43802137D280900BABA88 /* Homebrew.xcdatamodeld */,
+				5B9AFC71137E68AE00C444B9 /* Categories */,
 				5BA437C5137D271F00BABA88 /* Resources */,
 				5BA437C9137D271F00BABA88 /* Other Sources */,
 				5BA437BD137D271E00BABA88 /* Supporting Files */,
-				5B9AFC3F137E233E00C444B9 /* NSString+Hyperlink.h */,
-				5B9AFC40137E233E00C444B9 /* NSString+Hyperlink.m */,
+				5B9AFC65137E688700C444B9 /* Vendor */,
 			);
 			path = Homebrew;
 			sourceTree = "<group>";
@@ -194,28 +223,6 @@
 				5BA437E8137D271F00BABA88 /* main.c */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5BA43808137D2A8400BABA88 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				5BA43809137D2A9A00BABA88 /* Additions */,
-				5BA43805137D2A7E00BABA88 /* TSPProgressIndicator.m */,
-				5BA43806137D2A7E00BABA88 /* TSPProgressIndicator.h */,
-			);
-			name = Vendor;
-			path = Homebrew;
-			sourceTree = "<group>";
-		};
-		5BA43809137D2A9A00BABA88 /* Additions */ = {
-			isa = PBXGroup;
-			children = (
-				5BA4380A137D2A9A00BABA88 /* NSBezierPath+MCAdditions.h */,
-				5BA4380B137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m */,
-				5BA4380C137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.h */,
-				5BA4380D137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m */,
-			);
-			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,10 +336,10 @@
 			files = (
 				5BA437C4137D271E00BABA88 /* main.m in Sources */,
 				5BA43804137D280900BABA88 /* Homebrew.xcdatamodeld in Sources */,
-				5BA43807137D2A7E00BABA88 /* TSPProgressIndicator.m in Sources */,
-				5BA4380E137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m in Sources */,
-				5BA4380F137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */,
-				5B9AFC41137E233E00C444B9 /* NSString+Hyperlink.m in Sources */,
+				5B9AFC6D137E688700C444B9 /* NSBezierPath+MCAdditions.m in Sources */,
+				5B9AFC6E137E688700C444B9 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */,
+				5B9AFC6F137E688700C444B9 /* TSPProgressIndicator.m in Sources */,
+				5B9AFC74137E68AE00C444B9 /* NSString+Hyperlink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
