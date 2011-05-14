@@ -24,6 +24,9 @@
 		5BA437FC137D275200BABA88 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437FB137D275200BABA88 /* AppDelegate.rb */; };
 		5BA437FE137D276F00BABA88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BA437FD137D276F00BABA88 /* MainMenu.xib */; };
 		5BA43804137D280900BABA88 /* Homebrew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BA43802137D280900BABA88 /* Homebrew.xcdatamodeld */; };
+		5BA43807137D2A7E00BABA88 /* TSPProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA43805137D2A7E00BABA88 /* TSPProgressIndicator.m */; };
+		5BA4380E137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4380B137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m */; };
+		5BA4380F137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA4380D137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		5BA437FB137D275200BABA88 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		5BA437FD137D276F00BABA88 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		5BA43803137D280900BABA88 /* Homebrew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homebrew.xcdatamodel; sourceTree = "<group>"; };
+		5BA43805137D2A7E00BABA88 /* TSPProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPProgressIndicator.m; sourceTree = "<group>"; };
+		5BA43806137D2A7E00BABA88 /* TSPProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPProgressIndicator.h; sourceTree = "<group>"; };
+		5BA4380A137D2A9A00BABA88 /* NSBezierPath+MCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+MCAdditions.h"; sourceTree = "<group>"; };
+		5BA4380B137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+MCAdditions.m"; sourceTree = "<group>"; };
+		5BA4380C137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+PXRoundedRectangleAdditions.h"; sourceTree = "<group>"; };
+		5BA4380D137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+PXRoundedRectangleAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				5BA437BC137D271E00BABA88 /* Homebrew */,
+				5BA43808137D2A8400BABA88 /* Vendor */,
 				5BA437E1137D271F00BABA88 /* HomebrewImporter */,
 				5BA437B6137D271E00BABA88 /* Frameworks */,
 				5BA437B4137D271E00BABA88 /* Products */,
@@ -179,6 +189,28 @@
 				5BA437E8137D271F00BABA88 /* main.c */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BA43808137D2A8400BABA88 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5BA43809137D2A9A00BABA88 /* Additions */,
+				5BA43805137D2A7E00BABA88 /* TSPProgressIndicator.m */,
+				5BA43806137D2A7E00BABA88 /* TSPProgressIndicator.h */,
+			);
+			name = Vendor;
+			path = Homebrew;
+			sourceTree = "<group>";
+		};
+		5BA43809137D2A9A00BABA88 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5BA4380A137D2A9A00BABA88 /* NSBezierPath+MCAdditions.h */,
+				5BA4380B137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m */,
+				5BA4380C137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.h */,
+				5BA4380D137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +324,9 @@
 			files = (
 				5BA437C4137D271E00BABA88 /* main.m in Sources */,
 				5BA43804137D280900BABA88 /* Homebrew.xcdatamodeld in Sources */,
+				5BA43807137D2A7E00BABA88 /* TSPProgressIndicator.m in Sources */,
+				5BA4380E137D2A9A00BABA88 /* NSBezierPath+MCAdditions.m in Sources */,
+				5BA4380F137D2A9A00BABA88 /* NSBezierPath+PXRoundedRectangleAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

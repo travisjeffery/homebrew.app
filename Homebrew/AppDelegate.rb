@@ -13,6 +13,7 @@ class AppDelegate
     attr_accessor :window
     attr_accessor :formulas
     attr_accessor :totalFormulasFoundLabel
+    attr_accessor :segmentedControl
     
     def applicationDidFinishLaunching(a_notification)
         # Insert code here to initialize your application
@@ -25,26 +26,51 @@ class AppDelegate
 
         @managedObjectContext.save(nil)
         
-        @totalFormulasFoundLabel.stringValue = "#{totalFormulasFound} in total found"
+        @totalFormulasFoundLabel.stringValue = "#{totalFormulasFoundWithRequest(nil, withPredicate:nil)} in total found"
     end
     
     def close(sender)
         window.close
     end
     
-    def emptyFormulas
-        allFormulas = NSFetchRequest.alloc.init
-        allFormulas.setEntity(NSEntityDescription.entityForName("Formula", inManagedObjectContext:@managedObjectContext))
-        formulas = @managedObjectContext.executeFetchRequest(allFormulas, error:nil)
-        formulas.each do |formula|
-            @managedObjectContext.deleteObject(formula)
-        end 
+    def segmentedControlAction(sender)
+        puts "segmentedControl clicked"
+        case sender.cell.tagForSegment(sender.selectedSegment)
+        when 1
+            puts "selectedSegment was 1"
+            installedFormulas
+        when 2
+            # oudated formulas
+        else
+            # all
+            results = formulasFoundWithRequest(nil, withPredicate:nil)
+            @totalFormulasFoundLabel.stringValue = "#{results.length} in total found"
+        end
     end
     
-    def totalFormulasFound
-        allFormulas = NSFetchRequest.alloc.init
-        allFormulas.setEntity(NSEntityDescription.entityForName("Formula", inManagedObjectContext:@managedObjectContext))
-        @managedObjectContext.executeFetchRequest(allFormulas, error:nil).length
+    def installedFormulas
+        results = formulasFoundWithRequest(nil, withPredicate:NSPredicate.predicateWithFormat("isInstalled == Ok"))
+        @totalFormulasFoundLabel.stringValue = "#{results.length} in total found"
+    end
+    
+    def emptyFormulas
+        formulasFoundWithRequest(nil, withPredicate:nil).each do |result|
+            @managedObjectContext.deleteObject(result)
+        end 
+    end
+
+    def formulasFoundWithRequest(request, withPredicate:predicate)
+        unless request
+            request = NSFetchRequest.new
+            request.entity = NSEntityDescription.entityForName("Formula", inManagedObjectContext:@managedObjectContext)
+        end
+        request.predicate = predicate if predicate
+        error = Pointer.new_with_type('@')
+        @managedObjectContext.executeFetchRequest(request, error:error)
+    end
+    
+    def totalFormulasFoundWithRequest(request, withPredicate:predicate)
+        formulasFoundWithRequest(request, withPredicate:predicate).length
     end
     
     def storeFormulasWithFormulas(formulas)
